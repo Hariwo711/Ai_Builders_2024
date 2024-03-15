@@ -1,0 +1,14 @@
+##Python CSV to JSON
+In the Python file, you have a program that performs a GET request on the route https://coderbyte.com/api/challenges/logs/user-info-csv and then sort the CSV data by the second column.
+
+Finally, convert the sorted CSV data to a JSON object and print it. Be sure to call json.dumps on the final object.
+
+Example Input:
+
+name,email,phone
+John Doe,johndoe@example.com,555-1234
+Jane Smith,janesmith@example.com,555-5678
+
+Example Output:
+
+[{"name":"John Doe","email":"johndoe@example.com","phone":"555-1234"},{"name":"Jane Smith","email":"janesmith@example.com","phone":"555-5678"}]
