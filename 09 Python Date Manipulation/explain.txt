@@ -1,0 +1,16 @@
+##Python Date Manipulation
+In the Python file, write a program to perform a GET request on the route https://coderbyte.com/api/challenges/json/date-list. This data is a list of dictionaries, where each dictionary has a date and a value key. Your job is to return a new list that includes these items but also adds any missing dates in the sequence from the earliest to the latest date found in the original list. For any new date that you add, set its value to 0. Each dictionary should have:
+
+1. A date property: This should represent each day from the earliest to the latest date in the fetched data. The time should be hard coded to "T05:00:00.000Z" for days where data is missing. Example: "2022-02-05T05:00:00.000Z".
+
+2. A value property: If there's data for a specific day, use the provided value. If not, set the value to 0.
+
+Finally, print an array of objects and be sure to call json.dumps on the final object.
+
+Example Input:
+
+[{date:"2022-03-15T08:00:00.000Z",value:25},{date:"2022-03-15T08:00:00.000Z",value:15},{date:"2022-03-20T10:30:00.000Z",value:27}]
+
+Example Output:
+
+[{"date": "2022-03-15T08:00:00.000Z", "value": 25}, {"date": "2022-03-15T08:00:00.000Z", "value": 15}, {"date": "2022-03-16T05:00:00.000Z", "value": 0}, {"date": "2022-03-17T05:00:00.000Z", "value": 0}, {"date": "2022-03-18T05:00:00.000Z", "value": 0}, {"date": "2022-03-19T05:00:00.000Z", "value": 0}, {"date": "2022-03-20T10:30:00.000Z", "value": 27}]
