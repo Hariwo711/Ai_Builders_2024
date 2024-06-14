@@ -2,7 +2,7 @@
 
 Welcome to the AI Builders 2024 repository! This repository contains various Python code examples designed for learning and showcasing different programming tasks.
 
-![Header Image](./images/header-image.png)
+![Header Image](header.png)
 
 ## Table of Contents
 - [Arith Geo](#arith-geo)
